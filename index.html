@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel= "stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Proyecto M1_FT48</title>
-  </head>
-  <body>
-    <h1>Proyecto M1</h1>
-    <h2>Sobre Mi</h2>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>HomeWorkFT48</title>
+</head>
+<body>
+<header>
+    <h1>HomeWork M1</h1>
     <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        <ul>
+            <li>Acerca de mi</li>
+            <li>Mis Tecnologias Favoritas</li>
+            <li>Mis Actividades Favoritas</li>
+        </ul>
     </nav>
-    <h2>Mis Tecnologías Favoritas</h2>
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-    <h2>Mis Actividades Favoritas</h2>
-
-    <form id="form">
-    <div>
-    <label for="text">TÍTULO:</label>
-    <input type="text" id="text" placeholder=". . .">
-  </div>
-  <div>
-    <label for="DESCRIPCIÓN">DESCRIPCIÓN:</label>
-    <textarea name="DESCRIPCIÓN" id="DESCRIPCIÓN" cols="50" rows="2" placeholder="Me gusta todo lo relacionado a la informatica, programacion y me gusta realizar crossfit."></textarea>
-  </div>
-  <div>
-  <label for="URL DE IMAGEN">URL DE IMAGEN:</label>
-  <input type="img" id="URL DE IMAGEN" placeholder="link">
-</div>
-<button id="miBoton" class="boton-estilo" onclick="miButton()">Buscar</button>
-</form>
-
-
-  </body>
+</header>
+<main>
+    <section id="about">
+        <h2>Acerca de Mi</h2>
+        <p>¡Soy un estudiante de Henry, el cual quiere aprender a crear y editar codigos!</p>
+    </section>
+    <section id="favTech">
+        <h2>Mis Tecnologias Favoritas</h2>
+        <article>
+            <ul>
+                <li>
+                    <h3>HTML5</h3>
+                    <img src="./assets/images/html_logo.png" alt="image HTML">
+                </li>
+                <li>
+                    <h3>
+                        CSS3
+                    </h3>
+                    <img src="./assets/images/css_logo.png" alt="image CSS">
+                </li>
+                <li><h3>
+                    JavaScript
+                </h3>
+                    <img src="./assets/images/js_logo.png" alt="image JavaScript"></li>
+            </ul>
+        </article>
+    </section>
+    <section id="favActivities">
+        <h2>Mis Actividades Favoritas</h2>
+        <form id="form">
+            <div>
+                <label for="title-input">
+                    Titulo:
+                </label>
+                <input type="text" id="title-input" placeholder=". . .">
+            </div>
+            <div>
+                <label for="description-input">
+                    Descripcion:
+                </label>
+                <textarea name="description" id="description-input" rows="2"
+                          placeholder="Me gusta todo lo relacionado a PC"></textarea>
+            </div>
+            <div>
+                <label for="img-url-input">
+                    Url de la imagen:
+                </label>
+                <input type="text" id="img-url-input" placeholder="link">
+            </div>
+            <input type="submit" value="Buscar" id="add">
+        </form>
+        <div id="activity-container">
+            <span>No hay actividades</span>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Hecho por Ignacio, todos los derechos reservados</p>
+</footer>
+<script src="./scripts/index.js"></script>
+</body>
 </html>
